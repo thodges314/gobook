@@ -17,7 +17,7 @@ func main() {
 		counts[input.Text()]++
 	}
 	// note: ignoring potential errors from Input.Err()
-	for line, n:= range counts {
+	for line, n:= range counts { //range returns index AND arg
 		if n> 1 {
 			fmt.Printf("%d\t%s\n", n, line)
 		}

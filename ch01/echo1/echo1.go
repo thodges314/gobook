@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-	var s, sep string
+	var s, sep string //variables s and sep of type string - initialises to ""
 	// fmt.Println(os.Args[0])
-	for i := 1; i < len(os.Args); i++ {
+	for i := 1; i < len(os.Args); i++ {//:= 'short variable declaration' - declared variables and automatically sets type
 		s += sep + os.Args[i]
 		sep = " "
 	}
