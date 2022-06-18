@@ -11,6 +11,7 @@ import (
 )
 
 func main() {
+	fmt.Println("ctrl-d to interrupt input")
 	counts := make(map[string]int)
 	input := bufio.NewScanner(os.Stdin)
 	for input.Scan() {
